@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snakes</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <video autoplay muted loop id="bg-video">
+    <source
+    src="https://res.cloudinary.com/fhnyz8ep/video/upload/v1782810869/output_b9mejj.mp4"
+    type="video/mp4"
+  />
+    
+</video>
+
+    <!-- <div class="logo">
+        <img src="image/snake.png" alt="Logo image" width="150">
+    </div> -->
+    <div class="overlay"></div>
+   <div class="home-cards">
+
+    <div class="card">
+        <h2>Home</h2>
+        <p>Welcome to the Snake Information Portal.</p>
+        <a href="home.html">Open</a>
+    </div>
+
+    <div class="card">
+        <h2>About</h2>
+        <p>Learn about snakes and their importance in nature.</p>
+        <a href="about.html" >Open</a>
+    </div>
+
+    <div class="card">
+        <h2>Types</h2>
+        <p>Explore different species of snakes.</p>
+        <a href="types.html" >Open</a>
+    </div>
+
+    <div class="card">
+        <h2>Contact Us</h2>
+        <p>Get in touch for questions and suggestions.</p>
+        <a href="contact.html">Open</a>
+    </div>
+
+    <div class="card">
+        <h2>Rescue Kit</h2>
+        <p>Learn about snakebite first aid and rescue tips.</p>
+        <a href="rescue.html" target="_blank">Open</a>
+    </div>
+
+</div>
+<section class="scale-card">
+
+    <h2>Snake Scale Gallery</h2>
+
+    <div class="slider">
+
+        <!-- Smooth Scales -->
+        <div class="slide">
+            <img src="image/smooth-scale.jpeg" alt="Smooth Scales">
+            <p>
+                <b>Smooth scales</b> give snakes a glossy appearance and help
+                reduce friction during movement.
+            </p>
+        </div>
+
+        <!-- Keeled Scales -->
+        <div class="slide">
+            <img src="image/keeled-scale.jpeg" alt="Keeled Scales">
+            <p>
+                <b>Keeled scales</b> contain a raised ridge that gives snakes
+                a rough texture and improves camouflage.
+            </p>
+        </div>
+
+        <!-- Ventral Scales -->
+        <div class="slide">
+            <img src="image/ventral-scale.jpeg" alt="Ventral Scales">
+            <p>
+                <b>Ventral scales</b> are found on the belly and help snakes
+                grip the ground while moving.
+            </p>
+        </div>
+
+        <!-- Head Scales -->
+        <div class="slide">
+            <img src="image/head-scales.jpeg" alt="Head Scales">
+            <p>
+                <b>Head scales</b> protect sensitive areas and are often used
+                to identify different snake species.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+<script>
+
+let slideIndex = 0;
+
+showSlides();
+
+function showSlides(){
+
+    let slides =
+        document.getElementsByClassName("slide");
+
+    for(let i=0;i<slides.length;i++){
+        slides[i].style.display="none";
+    }
+
+    slideIndex++;
+
+    if(slideIndex > slides.length){
+        slideIndex = 1;
+    }
+
+    slides[slideIndex-1].style.display="block";
+
+    setTimeout(showSlides,8000);
+
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of snakes</title>
+</head>
+<body>
+    <link rel="stylesheet" href="typecss.css">
+     <video autoplay muted loop id="bg-video">
+    <source
+    src="https://res.cloudinary.com/fhnyz8ep/video/upload/v1782810869/output_b9mejj.mp4"
+    type="video/mp4"
+  />
+</video>
+<div class="overlay"></div>
+<div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search snake species..."
+           onkeyup="searchSnake()">
+</div>
+    <div class="container">
+      <div class="content">
+        <a href="https://en.wikipedia.org/wiki/Russell%27s_viper" target="_blank">
+        <img src="image/Russell Viper.png" width="130" alt="Russell's Viper"> 
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Russell%27s_viper" target="_blank">
+            <p>Explore about Russell's Viper</p>
+        </a>
+    </div>
+    <div class="content">
+        <a href="https://en.wikipedia.org/wiki/King_cobra" target="_blank">
+            <img src="image/king cobra.jpeg" width="130" alt="King Cobra">
+        </a>
+        <a href="https://en.wikipedia.org/wiki/King_cobra" target="_blank">
+            <p>Explore about King Cobra</p>
+        </a>
+    </div>
+    <div class="content">
+        <a href="https://en.wikipedia.org/wiki/Rattlesnake" target="_blank">
+            <img src="image/Rattle snake.jpeg" width="130" alt="Rattlesnake">
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Rattlesnake" target="_blank">
+            <p>Explore about Rattlesnake</p>
+        </a>
+    </div>
+    <div class="content">
+        <a href="https://en.wikipedia.org/wiki/Mamba" target="_blank">
+            <img src="image/Black mamba.jpeg" width="130" alt="Black Mamba">
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Mamba" target="_blank">
+            <p>Explore about Black Mamba</p>
+        </a>
+    </div>
+    <div class="content">
+        <a href="https://en.wikipedia.org/wiki/Eastern_green_mamba" target="_blank">
+            <img src="image/green mamba.jpeg" width="130" alt="Eastern Green Mamba">
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Eastern_green_mamba" target="_blank">
+            <p>Explore about Eastern Green Mamba</p>
+        </a>
+    </div>
+    <div class="content">
+        <a href="https://en.wikipedia.org/wiki/Python_(genus)" target="_blank">
+            <img src="image/Python snake.jpeg" width="130" alt="Python">
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Python_(genus)" target="_blank">
+            <p>Explore about Python snake</p>
+        </a>
+    </div>
+    <div class="content">
+        <a href="https://en.wikipedia.org/wiki/Ball_python" target="_blank">
+            <img src="image/Ball python.jpeg" width="130" alt="Ball Python">
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Ball_python" target="_blank">
+            <p>Explore about Ball Python</p>
+        </a>
+    </div>
+    <div class="content">
+        <a href="https://en.wikipedia.org/wiki/Oligodon_arnensis" target="_blank">
+            <img src="image/Black kukri.jpeg" width="130" alt="Oligodon Arnensis">
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Oligodon_arnensis" target="_blank">
+            <p>Explore about Black Kukri(Oligodon Arnensis)</p>
+        </a>
+    </div>
+    <div class="content">
+        <a href="https://en.wikipedia.org/wiki/Oriental_rat_snake" target="_blank">
+            <img src="image/rat snake.jpeg" width="130" alt="Oriental Rat Snake">
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Oriental_rat_snake" target="_blank">
+            <p>Explore about Oriental Rat Snake</p>
+        </a>
+    </div>
+    <div class="content">
+        <a href="https://en.wikipedia.org/wiki/Eryx_johnii" target="_blank">
+            <img src="image/sand boa.jpeg" width="130" alt="Eryx Johnii">
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Eryx_johnii" target="_blank">
+            <p>Explore about Sand Boa(Eryx_johnii)</p>
+        </a>
+    </div>
+    <div class="content">
+        <a href="https://en.wikipedia.org/wiki/Inland_taipan" target="_blank">
+            <img src="image/inland taipan.jpeg" width="130" alt="Inland Taipan">
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Inland_taipan" target="_blank">
+            <p>Explore about Inland Taipan</p>
+        </a>
+    </div>
+    <div class="content">
+        <a href="https://en.wikipedia.org/wiki/Echis" target="_blank">
+            <img src="image/saw viper.jpeg" width="130" alt="Echis">
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Echis" target="_blank">
+            <p>Explore about Saw-scaled Viper(Echis)</p>
+        </a>
+    </div>
+    <div class="content">
+        <a href="https://en.wikipedia.org/wiki/Boomslang" target="_blank">
+            <img src="image/boomslang.jpeg" width="130" alt="Boomslang">
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Boomslang" target="_blank">
+            <p>Explore about Boomslang</p>
+        </a>
+    </div>
+    <div class="content">
+        <a href="https://en.wikipedia.org/wiki/Tiger_snake" target="_blank">
+            <img src="image/tiger snake.jpeg" width="130" alt="Tiger Snake">
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Tiger_snake" target="_blank">
+            <p>Explore about Tiger Snake</p>
+        </a>
+    </div>
+    <div class="content">
+        <a href="https://en.wikipedia.org/wiki/Anaconda" target="_blank">
+            <img src="image/anaconda.jpeg" width="130" alt="Anaconda">
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Anaconda" target="_blank">
+            <p>Explore about Anaconda</p>
+        </a>
+    </div>
+    <div class="content">
+        <a href="https://en.wikipedia.org/wiki/Bungarus_candidus" target="_blank">
+            <img src="image/krait.jpeg" width="130" alt="Bungarus Candidus">
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Bungarus_candidus" target="_blank">
+            <p>Explore about Malayan Krait(Bungarus_candidus)</p>
+        </a>
+    </div>
+</div>
+<script>
+
+function searchSnake() {
+
+    let input = document.getElementById("searchInput").value.toLowerCase();
+
+    let cards = document.querySelectorAll(".content");
+
+    cards.forEach(function(card){
+
+        let text = card.innerText.toLowerCase();
+
+        if(text.includes(input)){
+
+            card.style.display = "block";
+
+        }
+
+        else{
+
+            card.style.display = "none";
+
+        }
+
+    });
+
+}
+
+</script>
+</body>
+</html>

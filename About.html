@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Snakes</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:0;
+            background:#f9f9f9;
+        }
+
+        .about-section{
+            max-width:900px;
+            margin:50px auto;
+            background:rgb(153, 155, 190);
+            padding:30px;
+            border-radius:15px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.2);
+             background:rgba(255,255,255,0.15); 
+            backdrop-filter:blur(8px);
+            -webkit-backdrop-filter:blur(8px);
+            
+        }
+
+        .about-section h1{
+            text-align:center;
+            color:#ebebeb;
+        }
+
+        .about-section img{
+            width:100%;
+            max-height:400px;
+            object-fit:cover;
+            border-radius:10px;
+            margin-bottom:20px;
+        }
+
+        .about-section p{
+            line-height:1.8;
+            color:#fffcfc;
+            text-align:justify;
+            font-size:18px;
+        }
+
+        .facts{
+            margin-top:20px;
+            text-color:#ffffff;
+        }
+
+        .facts h2{
+            color:#ffffff;
+        }
+
+        .facts ul li{
+            margin:10px 0;
+            color:#ffffff;
+        }
+        .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: -1;
+}
+#bg-video{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:-2;
+}
+.about-img{
+    float:right;
+    width: 300px;
+    height:auto;
+
+    margin-left:20px;
+    margin-bottom:15px;
+
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.3);
+}
+    </style>
+</head>
+
+<body>
+ <video autoplay muted loop id="bg-video">
+    <source
+    src="https://res.cloudinary.com/fhnyz8ep/video/upload/v1782810869/output_b9mejj.mp4"
+    type="video/mp4"
+  /> 
+</video>
+<div class="overlay"></div>
+<div class="about-section">
+
+    <h1>About Snakes</h1>
+
+    <p>
+        Snakes are fascinating reptiles found in forests, deserts,
+        grasslands, wetlands, and even oceans around the world.
+        They belong to the reptile family and are known for their
+        long, legless bodies and unique movement.
+    </p>
+
+    <p>
+        More than 3,000 species of snakes exist worldwide. Some are
+        harmless, while others are venomous and use their venom to
+        capture prey or defend themselves. Snakes play an important
+        role in nature by controlling rodent populations and helping
+        maintain ecological balance.
+    </p>
+    <div class="about-img">
+        <img src="image/snake.png" alt="Snake">
+    </div>
+    <p>
+        Although many people fear snakes, most species avoid humans
+        and attack only when threatened. Learning about snakes helps
+        us understand their importance and appreciate their role in
+        the environment.
+    </p>
+
+    <div class="facts">
+        <h2>Interesting Facts</h2>
+
+        <ul>
+            <li>Snakes do not have eyelids and cannot blink.</li>
+            <li>They use their tongues to smell their surroundings.</li>
+            <li>Most snakes swallow their prey whole.</li>
+            <li>Snakes shed their skin several times during their lives.</li>
+            <li>Some species can live for over 20 years.</li>
+        </ul>
+        <h2>Why snakes matter (Importance)</h2>
+        <ul>
+            <li><h4><b>Natural Pest Control:</b></h4> Snakes are apex predators for rodents like rats and mice. By hunting them, they save millions in crop damages and prevent the 
+                spread of diseases (such as Hantavirus or Lyme disease, which are often carried by mice and ticks).</li>
+            <li><h4><b>Ecological Balance:</b></h4> Snakes are an integral part of the food chain. They help maintain the 
+                balance of ecosystems by controlling populations of their prey and serving as food for other predators.</li>
+            <li><h4><b>Life-Saving Medicine:</b></h4> Proteins and peptides found in snake venom are used globally in medical research to develop 
+                life-saving medications for treating heart disease, blood clots, and high blood pressure.</li>
+            <li><h4><b>Food Web Balance:</b></h4> They serve as crucial middlemen in the food chain. They regulate the populations of smaller animals
+                 (like insects and frogs) while serving as a primary food source for larger predators like birds of prey and mammals.</li>
+        </ul>
+    </div>
+    
+</div>
+
+</body>
+</html>

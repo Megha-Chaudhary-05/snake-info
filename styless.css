@@ -1,0 +1,22 @@
+body{
+    margin:0;
+    padding:0;
+}
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #ccc;
+    padding: 0 20px;
+}
+.left img{
+    width:200px;
+}
+.right{
+    display: flex;
+    gap: 30px;
+}
+.right a{
+    text-decoration:none;
+    color:rgb(47, 57, 5);
+}

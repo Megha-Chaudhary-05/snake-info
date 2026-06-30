@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:0;
+            background:#f9f9f9;
+        }
+
+        .about-section{
+            max-width:900px;
+            margin:50px auto;
+            background:rgb(153, 155, 190);
+            padding:30px;
+            border-radius:15px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.2);
+             background:rgba(255,255,255,0.15); 
+            backdrop-filter:blur(8px);
+            -webkit-backdrop-filter:blur(8px);
+            
+        }
+
+        .about-section h1{
+            text-align:center;
+            color:#ebebeb;
+        }
+        .about-section h2{
+            text-align:center;
+            color:#2b2804;
+            font-style: times new roman;
+            
+        }
+        .about-section h4{
+            text-align:left;
+            color:#ebebeb;
+        }
+
+        .about-section img{
+            width:100%;
+            max-height:400px;
+            object-fit:cover;
+            border-radius:10px;
+            margin-bottom:20px;
+        }
+
+        .about-section p{
+            line-height:1.8;
+            color:#fffcfc;
+            text-align:justify;
+            font-size:18px;
+        }
+
+        .about-section ul li{
+            margin:10px 0;
+            color:#ffffff;
+        }
+        .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: -1;
+}
+#bg-video{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:-2;
+}
+.about-img{
+    float:right;
+    width: 300px;
+    height:auto;
+
+    margin-left:20px;
+    margin-bottom:15px;
+
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.3);
+}
+.about-section a{
+    text-decoration: none;
+    color: rgb(16, 45, 36);
+    font-size: 20px;
+}
+
+.about-img a:hover{
+    color: #90EE90;
+}
+.snake-showcase{
+    width:95%;
+    max-width:1700px;
+    margin:40px auto;
+}
+
+.slide{
+    display:none;
+    animation:slideEffect 1s ease;
+}
+
+.slide img{
+    width:100%;
+    height:480px;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+.slide h2{
+    color:rgb(255, 255, 255);
+    text-align:center;
+    margin-top:15px;
+    font-size:24px;
+}
+
+.slide p{
+    color:white;
+    text-align:center;
+    font-size:18px;
+}
+
+@keyframes slideEffect{
+
+    from{
+        opacity:0;
+        transform:translateX(100px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+    </style>
+</head>
+<body>
+     <video autoplay muted loop id="bg-video">
+    <source
+    src="https://res.cloudinary.com/fhnyz8ep/video/upload/v1782810869/output_b9mejj.mp4"
+    type="video/mp4"
+  />
+</video>
+<div class="overlay"></div>
+
+<div class="snake-showcase">
+
+     <div class="slide">
+        <img src="image/fffff.jpg">
+        <h2><i>Welcome! Enjoy the World of Snakes</i></h2>
+        <p>Silent, sleek, and perfectly adapted to their world.</p>
+    </div>
+    <div class="slide">
+        <img src="image/cobrah.jpg" alt="King Cobra">
+        <h2><i>King Cobra</i></h2>
+        <p>The world's longest venomous snake, known for its intelligence and impressive hood.</p>
+    </div>
+
+    <div class="slide">
+        <img src="image/pythonh.jpg" alt="Python">
+        <h2><i>Python</i></h2>
+        <p>Pythons are non-venomous snakes that capture prey by constriction.</p>
+    </div>
+
+    <div class="slide">
+        <img src="image/anah.jpg" alt="Anaconda">
+        <h2><i>Green Anaconda</i></h2>
+        <p>One of the heaviest snakes on Earth, living mainly in South American wetlands.</p>
+    </div>
+
+    <div class="slide">
+        <img src="image/viperh.jpg" alt="Russell's Viper">
+        <h2><i>Russell's Viper</i></h2>
+        <p>A highly venomous snake commonly found in South Asia.</p>
+    </div>
+    <div class="slide">
+        <img src="image/tigersnakeh.jpg" alt="Tiger Snake">
+        <h2><i>Tiger Snake</i></h2>
+        <p>A highly venomous snake commonly found in Australia and New Guinea.</p>
+    </div>
+    <div class="slide">
+        <img src="image/sandboah.jpg" alt="Sand Boa">
+        <h2><i>Sand Boa</i></h2>
+        <p>A small, non-venomous snake found in desert regions.</p>
+    </div>
+    <div class="slide">
+        <img src="image/rattleh.jpg" alt="Rattle Snake">
+        <h2><i>Rattle Snake</i></h2>
+        <p>A highly venomous snake commonly found in North America.</p>
+    </div>
+    <div class="slide">
+        <img src="image/ratsnakeh.jpg" alt="Rat Snake">
+        <h2><i>Rat Snake</i></h2>
+        <p> Rat snakes are non-venomous and pose no serious threat to humans.</p>
+    </div>
+
+</div>
+<div class="about-section">
+
+    <h1><b><i><u>Facts About Snakes</u></i></b></h1>
+
+    <p>
+        Snakes are legless, ectothermic reptiles found on every continent except Antarctica. There are over 3,000 species that hunt using unique
+         adaptations—such as smelling with their forked tongues, sensing vibrations through their jaws, and shedding their skin as they grow.
+    </p>
+
+    <h2><b><i><u>Senses & Anatomy</u></i></b></h2>
+     <ul>
+            <li><h4><b>Smell with their tongue:</b></h4> Snakes use their forked tongues to collect tiny scent particles from the air and the ground. 
+                These particles are transferred to a specialized sensory structure called the Jacobson's organ, located in the roof of the mouth. This unique ability helps snakes locate prey, 
+                detect predators, and navigate their surroundings with remarkable accuracy.</li>
+            <li><h4><b>No external ears:</b></h4> Unlike many animals, snakes do not have external ears or eardrums. 
+                Instead, they detect sounds by sensing vibrations that travel through the ground using their lower jaw bones. These vibrations are transmitted to the inner ear,
+                 allowing snakes to sense the movement of nearby animals and potential threats.</li>
+            <li><h4><b>Transparent eyelids:</b></h4> Snakes do not have movable eyelids, so they cannot blink like humans and many other animals.
+                 Instead, each eye is protected by a transparent scale called a spectacle, which keeps the eye safe while allowing clear vision.
+                 This protective covering is shed along with the snake's skin during the shedding process.</li>
+            <li><h4><b>Extreme flexibility:</b></h4>Snakes have highly flexible skulls and loosely connected jaw bones, 
+                allowing them to swallow prey much larger than their own heads. Strong ligaments and expandable skin help stretch the mouth during feeding.
+                 This remarkable adaptation enables snakes to consume large meals that can sustain them for weeks or even months.</li>
+             <li><h4><b>Internal organs:</b></h4> A snake's internal organs are specially arranged to fit its long, narrow body. 
+                Instead of being positioned side by side, paired organs such as the kidneys are located one behind the other.
+                 Most snake species also have only one fully developed functional lung, 
+                allowing more space for other organs and large prey inside the body.</li>
+        </ul>
+        <a href="https://www.britannica.com/animal/snake/Skull-and-sense-organs" target="_blank"><i><u>Learn more about snake senses and anatomy</u></i></a>
+    <div class="about-img">
+        <img src="image/home1.jpeg" alt="Snake">
+    </div>
+   
+        <h2><b><i><u>Diet & Survival</u></i></b></h2>
+     <ul>
+            <li><h4><b>Energy conservation:</b></h4> Snakes are highly efficient at conserving energy between meals. When food is scarce,
+                 their digestive system temporarily becomes less active, reducing energy use. After eating, their digestive organs rapidly expand and become highly active,
+                 allowing them to digest large prey efficiently before returning to a resting state.</li>
+            <li><h4><b>Slow metabolism:</b></h4>Snakes are ectothermic (cold-blooded) animals, meaning they rely on external
+                 heat sources such as sunlight to regulate their body temperature. Because of their slow metabolism, 
+                 they require much less energy than mammals and can survive for weeks or even months after eating a single large meal.
+                 This adaptation helps them thrive in environments where food is not always readily available.</li>
+    </ul>
+    <a href="https://www.crittercontrol.com/wildlife/snakes/snake-diet/" target="_blank"><i><u>Learn more about snake Diet and Survival</u></i></a>
+     <h2><b><i><u>Reproduction</u></i></b></h2>
+     <ul>
+            <li><h4><b>Egg layers vs. live birth: </b></h4> Most snake species lay eggs, but many give birth to live young. Egg-laying snakes place their eggs in safe, 
+                warm locations where they develop until hatching. Live-bearing snakes keep their young inside their bodies until they are fully developed, an adaptation that helps
+                 species survive in colder environments. Both reproductive strategies have evolved to maximize the survival of the offspring.</li>
+            <li><h4><b>Asexual reproduction:</b></h4> Some snake species, particularly certain boas and pythons, are capable of asexual reproduction, 
+                a process known as parthenogenesis. In this rare form of reproduction, a female snake can produce offspring without mating with a male. Although uncommon in the wild, 
+                parthenogenesis demonstrates the remarkable adaptability and survival strategies of some snake species.</li>
+    </ul>
+     <a href="https://vettoday.com/blog/pet-health/snake-reproduction/" target="_blank"><i><u>Learn more about snake Reproduction</u></i></a>
+      <div class="about-img">
+        <img src="image/homepage.jpeg" alt="Snake">
+    </div>
+     <h2><b><i><u>Diversity</u></i></b></h2>
+     <ul>
+            <li><h4><b>Ancient origins:</b></h4> Snakes evolved from ancient lizard-like ancestors more than 100 million years ago through a 
+                long process of evolution. Over time, they gradually lost their limbs and developed long, flexible bodies adapted for crawling. Interestingly, some modern snakes, such as pythons and boas,
+                 still possess tiny vestigial pelvic bones and small hind limb remnants, providing evidence of their evolutionary history.</li>
+            <li><h4><b>Size range: </b></h4>Snakes vary greatly in size, making them one of the most diverse groups of reptiles. 
+                The Barbados threadsnake is the smallest known snake, measuring only about 4 inches (10 cm) in length. In contrast,
+                 the reticulated python is the world's longest snake and can grow to over 30 feet (9 meters),
+                 demonstrating the remarkable range of sizes found among snake species.</li>
+            <li><h4><b>Global population: </b></h4> Snakes are found on every continent except Antarctica and inhabit a wide variety of environments, 
+                including forests, deserts, grasslands, mountains, wetlands, and oceans. However, they are naturally absent from a few isolated
+                 regions such as Ireland, Iceland, Greenland, and New Zealand,
+                 mainly because of their cold climates or geographic isolation.</li>
+            
+    </ul>
+   
+    <a href="http://macrobyraghu.com/2025/09/13/exploring-indias-snake-diversity/" target="_blank"><i><u>Learn more about snake Diversity</u></i></a>
+</div>
+<script>
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides(){
+
+    let slides = document.getElementsByClassName("slide");
+
+    for(let i=0;i<slides.length;i++){
+        slides[i].style.display="none";
+    }
+
+    slideIndex++;
+
+    if(slideIndex > slides.length){
+        slideIndex = 1;
+    }
+
+    slides[slideIndex-1].style.display="block";
+
+    setTimeout(showSlides,8000);
+
+}
+
+</script>
+</body>
+
+</html>
